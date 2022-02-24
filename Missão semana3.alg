@@ -9,12 +9,9 @@ Escreva(x)
 leia(x)
 m<-("===== Seja bem-vindo, "+ x +"!====")
 Escreval(m)
-Escreva("Digite seu salário:")
+Escreva("Digite seu salÃ¡rio:")
 leia(s1)
 s2<-s1*1.3
-Escreval("Parabéns,seu salário teve um aumento de 30%,agora é de:R$",s2)
-
-
-
+Escreval("ParabÃ©ns,seu salÃ¡rio teve um aumento de 30%,agora Ã© de:R$",s2)
 fimalgoritmo
 
