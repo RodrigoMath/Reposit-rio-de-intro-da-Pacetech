@@ -1,47 +1,47 @@
-algoritmo Semana-4
-          Rodrigo Raiter Mathias
+algoritmo "Semana-4"
+          "Rodrigo-Raiter-Mathias"
 
 var
 cotdol,dinheiroreal,dinheirodolar,f,c:real
 menu:literal
 inicio
-Escreval("Bem vindo ao aplicativo de conversões internacionais!")
-Escreval("Para começar, precisamos que nos diga a cotação atual do dólar:")
+Escreval("Bem vindo ao aplicativo de conversÃµes internacionais!")
+Escreval("Para comeÃ§ar, precisamos que nos diga a cotaÃ§Ã£o atual do dÃ³lar:")
 leia(cotdol)
 repita
-      Escreval("Escolha uma das opções disponíveis:")
-      Escreval("1:Converter dólar para reais")
-      Escreval("2:Reais para dólares")
+      Escreval("Escolha uma das opÃ§Ãµes disponÃ­veis:")
+      Escreval("1:Converter dÃ³lar para reais")
+      Escreval("2:Reais para dÃ³lares")
       Escreval("3:Graus Celcius para Fahrrenheit")
       Escreval("4:Fahrrenheit para graus Celcius")
       Escreval("5:Sair do aplicativo")
       leia(menu)
       se menu = "1" entao
-         Escreval("Quantos dólares você quer converter?(escreva apenas o número):")
+         Escreval("Quantos dÃ³lares vocÃª quer converter?(escreva apenas o nÃºmero):")
          leia(dinheirodolar)
          dinheiroreal<-dinheirodolar*cotdol
-         escreval("Você possuí R$:",dinheiroreal)
+         escreval("VocÃª possuÃ­ R$:",dinheiroreal)
       senao
       se menu = "2" entao
-         Escreval("Quantos reais você deseja converter?(escreva apenas números):")
+         Escreval("Quantos reais vocÃª deseja converter?(escreva apenas nÃºmeros):")
          leia(dinheiroreal)
          dinheirodolar<-dinheiroreal/cotdol
-         Escreval("Você possuí",dinheirodolar,"USD")
+         Escreval("VocÃª possuÃ­",dinheirodolar,"USD")
       senao
       se menu = "3" entao
          Escreval("Digite o valor em graus celcius:")
          leia(c)
          f<-(c*1.8)+32
-         Escreval("O valor em questão corresponde a:",f, " Fahrrenheit")
+         Escreval("O valor em questÃ£o corresponde a:",f, " Fahrrenheit")
       senao
       se menu = "4" entao
          Escreval("Digite o valor em graus Fahrrenheit:")
          leia(f)
          c<-(f-32)/1,8
-         Escreval("A sua temperatura atual, em Celcius, é de: ",c)
+         Escreval("A sua temperatura atual, em Celcius, Ã© de: ",c)
       senao
       se menu = "5" entao
-         Escreval("Obrigado pela preferência, volte sempre!")
+         Escreval("Obrigado pela preferÃªncia, volte sempre!")
       fimse
       fimse
       fimse
