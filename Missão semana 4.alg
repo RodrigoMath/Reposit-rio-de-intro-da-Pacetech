@@ -35,7 +35,7 @@ repita
          Escreval("O valor em questão corresponde a:",f, " Fahrrenheit")
       senao
       se menu = "4" entao
-         Escreval("Digite o valor em graus Fahrrenheit:")
+         Escreval("Digite o valor em  Fahrrenheit:")
          leia(f)
          c<-(f-32)/1,8
          Escreval("A sua temperatura atual, em Celcius, é de: ",c)
