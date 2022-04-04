@@ -21,36 +21,234 @@ public class CalculadoraJframe extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        Resultado = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         Botao1 = new javax.swing.JButton();
         Botao2 = new javax.swing.JButton();
         Botao3 = new javax.swing.JButton();
         Botao4 = new javax.swing.JButton();
+        OperadorDivisao = new javax.swing.JButton();
+        Limpatela = new javax.swing.JButton();
         Botao5 = new javax.swing.JButton();
         Botao6 = new javax.swing.JButton();
         Botao7 = new javax.swing.JButton();
         Botao8 = new javax.swing.JButton();
         Botao9 = new javax.swing.JButton();
+        Desliga = new javax.swing.JButton();
+        Botao00 = new javax.swing.JButton();
         Botao0 = new javax.swing.JButton();
-        OperadorSoma = new javax.swing.JButton();
-        OperadorIgualdade = new javax.swing.JButton();
-        OperadorVezes = new javax.swing.JButton();
-        OperadorMenos = new javax.swing.JButton();
-        OperadorDivisao = new javax.swing.JButton();
-        Limpatela = new javax.swing.JButton();
+        OperadorRaiz1 = new javax.swing.JButton();
         OperadorExponencial = new javax.swing.JButton();
         OperacaoVirgula = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        Desliga = new javax.swing.JButton();
-        OperadorRaiz1 = new javax.swing.JButton();
-        Botao00 = new javax.swing.JButton();
+        OperadorIgualdade = new javax.swing.JButton();
+        OperadorSoma = new javax.swing.JButton();
+        OperadorVezes = new javax.swing.JButton();
         OperacaoPorcentagem1 = new javax.swing.JButton();
+        OperadorMenos = new javax.swing.JButton();
+        Resultado = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Calculadora Pacetech");
+        jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 0, 0), 2, true));
+
+        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setLayout(new java.awt.GridLayout(4, 6, 15, 15));
+
+        Botao1.setText("1");
+        Botao1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao1);
+
+        Botao2.setText("2");
+        Botao2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao2);
+
+        Botao3.setText("3");
+        Botao3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao3);
+
+        Botao4.setText("4");
+        Botao4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao4);
+
+        OperadorDivisao.setText("/");
+        OperadorDivisao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorDivisaoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorDivisao);
+
+        Limpatela.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Limpatela.setText("AC");
+        Limpatela.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimpatelaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Limpatela);
+
+        Botao5.setText("5");
+        Botao5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao5ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao5);
+
+        Botao6.setText("6");
+        Botao6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao6ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao6);
+
+        Botao7.setText("7");
+        Botao7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao7ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao7);
+
+        Botao8.setText("8");
+        Botao8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao8ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao8);
+
+        Botao9.setText("9");
+        Botao9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao9ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao9);
+
+        Desliga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Desliga.setText("OFF");
+        Desliga.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DesligaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Desliga);
+
+        Botao00.setText("00");
+        Botao00.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao00ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao00);
+
+        Botao0.setText("0");
+        Botao0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Botao0ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(Botao0);
+
+        OperadorRaiz1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        OperadorRaiz1.setText("Raíz");
+        OperadorRaiz1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorRaiz1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorRaiz1);
+
+        OperadorExponencial.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        OperadorExponencial.setText("x^n");
+        OperadorExponencial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorExponencialActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorExponencial);
+
+        OperacaoVirgula.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        OperacaoVirgula.setText(".");
+        OperacaoVirgula.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperacaoVirgulaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperacaoVirgula);
+
+        OperadorIgualdade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        OperadorIgualdade.setText("=");
+        OperadorIgualdade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorIgualdadeActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorIgualdade);
+
+        OperadorSoma.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        OperadorSoma.setText("+");
+        OperadorSoma.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        OperadorSoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorSomaActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorSoma);
+
+        OperadorVezes.setText("*");
+        OperadorVezes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorVezesActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorVezes);
+
+        OperacaoPorcentagem1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        OperacaoPorcentagem1.setText("%");
+        OperacaoPorcentagem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperacaoPorcentagem1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperacaoPorcentagem1);
+
+        OperadorMenos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        OperadorMenos.setText("-");
+        OperadorMenos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OperadorMenosActionPerformed(evt);
+            }
+        });
+        jPanel2.add(OperadorMenos);
 
         Resultado.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         Resultado.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -62,176 +260,7 @@ public class CalculadoraJframe extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Calculadora Pacetech");
-        jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 0, 0), 2, true));
-
-        Botao1.setText("1");
-        Botao1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao1ActionPerformed(evt);
-            }
-        });
-
-        Botao2.setText("2");
-        Botao2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao2ActionPerformed(evt);
-            }
-        });
-
-        Botao3.setText("3");
-        Botao3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao3ActionPerformed(evt);
-            }
-        });
-
-        Botao4.setText("4");
-        Botao4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao4ActionPerformed(evt);
-            }
-        });
-
-        Botao5.setText("5");
-        Botao5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao5ActionPerformed(evt);
-            }
-        });
-
-        Botao6.setText("6");
-        Botao6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao6ActionPerformed(evt);
-            }
-        });
-
-        Botao7.setText("7");
-        Botao7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao7ActionPerformed(evt);
-            }
-        });
-
-        Botao8.setText("8");
-        Botao8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao8ActionPerformed(evt);
-            }
-        });
-
-        Botao9.setText("9");
-        Botao9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao9ActionPerformed(evt);
-            }
-        });
-
-        Botao0.setText("0");
-        Botao0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao0ActionPerformed(evt);
-            }
-        });
-
-        OperadorSoma.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        OperadorSoma.setText("+");
-        OperadorSoma.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
-        OperadorSoma.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorSomaActionPerformed(evt);
-            }
-        });
-
-        OperadorIgualdade.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        OperadorIgualdade.setText("=");
-        OperadorIgualdade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorIgualdadeActionPerformed(evt);
-            }
-        });
-
-        OperadorVezes.setText("*");
-        OperadorVezes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorVezesActionPerformed(evt);
-            }
-        });
-
-        OperadorMenos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        OperadorMenos.setText("-");
-        OperadorMenos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorMenosActionPerformed(evt);
-            }
-        });
-
-        OperadorDivisao.setText("/");
-        OperadorDivisao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorDivisaoActionPerformed(evt);
-            }
-        });
-
-        Limpatela.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Limpatela.setText("AC");
-        Limpatela.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LimpatelaActionPerformed(evt);
-            }
-        });
-
-        OperadorExponencial.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        OperadorExponencial.setText("x^n");
-        OperadorExponencial.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorExponencialActionPerformed(evt);
-            }
-        });
-
-        OperacaoVirgula.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        OperacaoVirgula.setText(".");
-        OperacaoVirgula.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperacaoVirgulaActionPerformed(evt);
-            }
-        });
-
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pacetechcalc1.png"))); // NOI18N
-
-        Desliga.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Desliga.setText("OFF");
-        Desliga.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DesligaActionPerformed(evt);
-            }
-        });
-
-        OperadorRaiz1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        OperadorRaiz1.setText("Raíz");
-        OperadorRaiz1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperadorRaiz1ActionPerformed(evt);
-            }
-        });
-
-        Botao00.setText("00");
-        Botao00.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Botao00ActionPerformed(evt);
-            }
-        });
-
-        OperacaoPorcentagem1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        OperacaoPorcentagem1.setText("%");
-        OperacaoPorcentagem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                OperacaoPorcentagem1ActionPerformed(evt);
-            }
-        });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 2, 12)); // NOI18N
         jLabel3.setText("\"Desculpas não trazem resultados\"");
@@ -242,62 +271,19 @@ public class CalculadoraJframe extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(30, 30, 30)
+                .addGap(37, 37, 37)
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(170, 170, 170))
+                .addGap(308, 308, 308))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(189, 189, 189))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Botao7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Botao1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Botao4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Botao0, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Botao8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Botao2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Botao00, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
-                            .addComponent(Botao5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(Botao3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Botao6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(Botao9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(OperacaoVirgula, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(OperadorVezes, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(OperadorExponencial, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(OperadorDivisao, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(OperadorRaiz1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(Limpatela, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Desliga, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(OperadorMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(OperadorSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(OperadorIgualdade, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(OperacaoPorcentagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(48, 48, 48))))
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(189, 189, 189))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -305,70 +291,32 @@ public class CalculadoraJframe extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 62, Short.MAX_VALUE)
-                        .addGap(18, 18, 18))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addGap(34, 34, 34)))
+                        .addGap(34, 34, 34))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addComponent(Resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 40, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Limpatela)
-                            .addComponent(Botao3)
-                            .addComponent(OperadorVezes)
-                            .addComponent(OperadorExponencial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(OperadorRaiz1)
-                            .addComponent(Desliga)
-                            .addComponent(OperadorDivisao)
-                            .addComponent(Botao6)
-                            .addComponent(Botao5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(Botao8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Botao00, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(OperacaoPorcentagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(OperadorMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Botao9))
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(OperadorSoma, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(OperacaoVirgula, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(OperadorIgualdade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Botao1)
-                            .addComponent(Botao2))
-                        .addGap(14, 14, 14)
-                        .addComponent(Botao4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Botao7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Botao0, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(14, 14, 14)
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -591,5 +539,6 @@ public class CalculadoraJframe extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
